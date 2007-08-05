@@ -59,20 +59,21 @@ Version 0.01 released 04 Aug 07
 
 =head1 SYNOPSIS
 
+    use Tie::Scalar::Random;
+
     tie my $line, 'Tie::Scalar::Random';
     while (<>) {
         $line = $_;
     }
-    print $line;           # prints a random line from stdin
+    print $line;           # a random line from STDIN
     die if $line ne $line; # should never die
-
 
     tie my $line, 'Tie::Scalar::Random', 1;
     while (<>) {
         $line = $_;
     }
-    print $line;           # prints a random line from stdin
-    print $line;           # prints a possibly different random line from stdin
+    print $line;           # a random line from STDIN
+    print $line;           # a possibly different random line from STDIN
     die if $line ne $line; # will probably die
 
 =cut
@@ -87,7 +88,8 @@ at any given time. The scalar will also produce the same value until it is
 assigned to again, in which case it may or may not begin producing the new
 value.
 
-It is essentially just the C<< rand($.) < 1 >> idiom.
+It is essentially just the C<< rand($.) < 1 >> idiom. See the Perl Cookbook,
+recipe 8.6, for an explanation.
 
 Note that if you pass a true value to C<tie>, like so:
 

@@ -64,7 +64,7 @@ Version 0.01 released 04 Aug 07
         $line = $_;
     }
     print $line;           # prints a random line from stdin
-    die if $line ne $line; # will never die
+    die if $line ne $line; # should never die
 
 
     tie my $line, 'Tie::Scalar::Random', 1;

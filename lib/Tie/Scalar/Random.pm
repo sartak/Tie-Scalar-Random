@@ -2,7 +2,6 @@
 package Tie::Scalar::Random;
 use strict;
 use warnings;
-use parent [ 'Tie::StdScalar' => 'Tie::Scalar' ];
 
 our $VERSION = '0.01';
 
@@ -47,6 +46,12 @@ sub STORE
     }
 
     return $self->FETCH;
+}
+
+sub DESTROY
+{
+    my $self = shift;
+    %$self = ();
 }
 
 =head1 NAME

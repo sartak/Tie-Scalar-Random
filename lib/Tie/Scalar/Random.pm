@@ -147,12 +147,6 @@ L<http://search.cpan.org/dist/Tie-Scalar-Random>
 
 =back
 
-=head1 ACKNOWLEDGEMENTS
-
-Thanks to the NetHack DevTeam for all their hard work.
-
-Thanks NetHack, for kicking oh-so-much ass. Happy twentieth birthday!
-
 =head1 COPYRIGHT & LICENSE
 
 Copyright 2007 Shawn M Moore.

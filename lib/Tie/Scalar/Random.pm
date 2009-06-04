@@ -153,7 +153,7 @@ L<http://search.cpan.org/dist/Tie-Scalar-Random>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Shawn M Moore.
+Copyright 2007-2009 Shawn M Moore.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

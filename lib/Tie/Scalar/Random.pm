@@ -105,49 +105,9 @@ time (so C<$line eq $line> may not hold true).
 Once the variable has been tied, it will produce C<undef> (even if it had a
 genuine value before C<tie>) until something is assigned to it.
 
-=head1 WHY?
-
-Why not? :)
-
 =head1 AUTHOR
 
 Shawn M Moore, C<< <sartak at gmail.com> >>
-
-=head1 BUGS
-
-No known bugs.
-
-Please report any bugs through RT: email 
-C<bug-tie-scalar-random at rt.cpan.org>, or browse to
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Tie-Scalar-Random>.
-
-=head1 SUPPORT
-
-You can find this documentation for this module with the perldoc command.
-
-    perldoc Tie::Scalar::Random
-
-You can also look for information at:
-
-=over 4
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Tie-Scalar-Random>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Tie-Scalar-Random>
-
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Tie-Scalar-Random>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Tie-Scalar-Random>
-
-=back
 
 =head1 COPYRIGHT & LICENSE
 

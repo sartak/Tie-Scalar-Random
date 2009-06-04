@@ -1,4 +1,3 @@
-#!perl
 package Tie::Scalar::Random;
 use strict;
 use warnings;

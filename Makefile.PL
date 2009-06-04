@@ -5,8 +5,6 @@ use inc::Module::Install;
 name           'Tie-Scalar-Random';
 all_from       'lib/Tie/Scalar/Random.pm';
 
-build_requires 'Test::More';
-
 auto_install;
 WriteAll;
 

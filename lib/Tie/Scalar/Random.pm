@@ -53,13 +53,13 @@ sub DESTROY
     %$self = ();
 }
 
+1;
+
+__END__
+
 =head1 NAME
 
 Tie::Scalar::Random - fetch a randomly selected assigned value
-
-=head1 VERSION
-
-Version 0.01 released 04 Aug 07
 
 =head1 SYNOPSIS
 
@@ -79,8 +79,6 @@ Version 0.01 released 04 Aug 07
     print $line;           # a random line from STDIN
     print $line;           # a possibly different random line from STDIN
     die if $line ne $line; # will probably die
-
-=cut
 
 =head1 USAGE
 
@@ -159,6 +157,4 @@ This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
 
 =cut
-
-1;
 

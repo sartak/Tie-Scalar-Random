@@ -10,8 +10,7 @@ $line = 10;
 
 my $ever_hundred = 0;
 
-for (1..100)
-{
+for (1..100) {
     $ever_hundred = 1 if $line == 100;
 }
 

@@ -4,51 +4,42 @@ use warnings;
 
 our $VERSION = '0.01';
 
-sub TIESCALAR
-{
+sub TIESCALAR {
     my $class = shift;
     my $remember_all = shift;
-    if ($remember_all)
-    {
+    if ($remember_all) {
         return bless {remember_all => 1, values => []}, $class;
     }
-    else
-    {
+    else {
         return bless {assigned => 0, value => undef}, $class;
     }
 }
 
-sub FETCH
-{
+sub FETCH {
     my $self = shift;
 
-    if ($self->{remember_all})
-    {
+    if ($self->{remember_all}) {
         return $self->{values}->[ rand @{$self->{values}} ];
     }
 
     return $self->{value};
 }
 
-sub STORE
-{
+sub STORE {
     my $self = shift;
     my $value = shift;
 
-    if ($self->{remember_all})
-    {
+    if ($self->{remember_all}) {
         push @{ $self->{values} }, $value;
     }
-    elsif (rand(++$self->{assigned}) < 1)
-    {
+    elsif (rand(++$self->{assigned}) < 1) {
         $self->{value} = $value;
     }
 
     return $self->FETCH;
 }
 
-sub DESTROY
-{
+sub DESTROY {
     my $self = shift;
     %$self = ();
 }

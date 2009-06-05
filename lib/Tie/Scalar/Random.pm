@@ -2,7 +2,7 @@ package Tie::Scalar::Random;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub TIESCALAR {
     my $class = shift;
